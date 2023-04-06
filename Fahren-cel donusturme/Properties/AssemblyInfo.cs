@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Workspace")]
+[assembly: AssemblyTitle("Cel-Fah-convert")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Workspace")]
+[assembly: AssemblyProduct("Cel-Fah-convert")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1f3cae82-ed82-4ee9-9023-3c4d77aad0f3")]
+[assembly: Guid("6a7d6633-7de1-46f9-92d2-05a36b80ad95")]
 
 // Version information for an assembly consists of the following four values:
 //

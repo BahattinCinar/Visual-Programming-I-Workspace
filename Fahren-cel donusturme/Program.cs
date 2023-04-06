@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Workspace
+namespace Cel_Fah_convert
 {
     internal static class Program
     {

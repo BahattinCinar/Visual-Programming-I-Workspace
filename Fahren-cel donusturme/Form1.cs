@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Workspace
+namespace Cel_Fah_convert
 {
     public partial class Form1 : Form
     {
@@ -17,66 +17,76 @@ namespace Workspace
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            int vize, vizeyuz, final, finalyuz, a, b, c, odev, odevyuz;
-
-            vize = Convert.ToByte( textBox1.Text);
-            vizeyuz = Convert.ToByte( textBox3.Text );
-            final = Convert.ToByte( textBox2.Text );
-            finalyuz = Convert.ToByte(textBox4.Text);
-            odev = Convert.ToByte( textBox5.Text );
-
-            a = finalyuz + vizeyuz;
-            b = ((vize * vizeyuz) + (final * finalyuz))/100;
-            
-            if (final < 0 || final > 100 || finalyuz < 0 || finalyuz > 100 || vize < 0 || vize > 100 || vizeyuz < 0 || vizeyuz > 100 )
-            {
-                MessageBox.Show("degerlerinizi kontrol ediniz (100 den küçük 0 dan büyük olması lazım)");
-            }
-            
-            if (a < 100 ) 
-            {
-                odevyuz = 100 - a ;
-
-                b = b + (odev * odevyuz) / 100;
-                
-                if (b >= 49.5)
-                {
-                    label7.Text = "Tebrikler " + b + "ortalama ile gectiniz";
-                }
-
-                else
-                {
-                    c = 50 - b;
-
-                    label7.Text = "Üzgünüm malesef " + c + " puanla kaçırdınız. Ortalamanız :" + b;
-                }
-
-            }
-
-            else 
-            {
-
-                if (b >= 49.5) 
-                {
-                    label7.Text = "Tebrikler " + b + "ortalama ile gectiniz";
-                }
-
-                else
-                {
-                    c = 50 - b;
-
-                    label7.Text = "Üzgünüm malesef " + c + " puanla kaçırdınız. Ortalamanız :" + b;
-                }
-
-            }
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            int fah, cel, value;
+
+            if (radioButton1.Checked == false && radioButton2.Checked == false && radioButton3.Checked == false)
+            {
+                MessageBox.Show("Bir islem turu seciniz");
+            }
+
+            else if (textBox1.Text == "")
+            {
+                MessageBox.Show("Lutfen deger alanini bos gecmeyiniz");
+            }
             
+            else 
+            {
+                if (radioButton1.Checked == true)
+                {
+                    cel = Convert.ToInt32(textBox1.Text);
+
+                    fah = (cel * 9 / 5) + 32;
+
+                    label4.Text = cel.ToString();
+                    label5.Text = fah.ToString();
+                    
+                    if(label7.Text != "")
+                    {
+                        label6.Text = "";
+                        label7.Text = "";
+                    }
+                }
+
+            else if (radioButton2.Checked == true)
+                {
+                    fah = Convert.ToInt32(textBox1.Text);
+
+                    cel = (fah - 32) * 5 / 9;
+
+                    label4.Text = cel.ToString();
+                    label5.Text = fah.ToString();
+                    
+                    if (label7.Text != "")
+                    {
+                        label6.Text = "";
+                        label7.Text = "";
+                    }
+                }
+
+                else
+                {
+                    value = Convert.ToInt32(textBox1.Text);
+
+                    fah = (value * 9 / 5) + 32;
+
+                    cel = (value - 32) * 5 / 9;
+
+                    label4.Text = cel.ToString();
+                    label5.Text = fah.ToString();
+                    label6.Text = "Girdiginiz deger = ";
+                    label7.Text = value.ToString();
+                }
+            }
+
+            
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -84,7 +94,22 @@ namespace Workspace
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -94,7 +119,17 @@ namespace Workspace
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

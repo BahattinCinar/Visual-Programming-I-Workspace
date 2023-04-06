@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Workspace.Properties
+namespace Cel_Fah_convert.Properties
 {
 
 
