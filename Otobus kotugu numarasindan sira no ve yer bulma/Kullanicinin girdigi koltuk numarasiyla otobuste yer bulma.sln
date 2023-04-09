@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kullanicinin girdigi koltuk numarasiyla otobuste yer bulma", "Kullanicinin girdigi koltuk numarasiyla otobuste yer bulma.csproj", "{64AA6892-4D6A-411A-8B1D-5AC724724F0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64AA6892-4D6A-411A-8B1D-5AC724724F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64AA6892-4D6A-411A-8B1D-5AC724724F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64AA6892-4D6A-411A-8B1D-5AC724724F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64AA6892-4D6A-411A-8B1D-5AC724724F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F70D2E07-216E-4736-BB44-9AAD9B8165FE}
+	EndGlobalSection
+EndGlobal
